@@ -1,0 +1,1 @@
+Redirecting standard input/output
