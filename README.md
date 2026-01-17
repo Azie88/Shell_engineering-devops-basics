@@ -4,6 +4,17 @@ Welcome! This repository contains simple exercises to help you learn the basics 
 
 If you are new to programming or DevOps, think of the Shell as a way to talk to your computer by typing commands instead of clicking with a mouse.
 
+## Why Learn Shell?
+
+Mastering the shell is a superpower for developers and DevOps engineers. It allows you to:
+- **Automate tedious tasks**: Write scripts to do work for you.
+- **Manage servers**: Interact with remote Linux servers that don't have a graphical interface.
+- **Boost productivity**: Perform complex file operations faster than using a mouse.
+
+## About This Repository
+
+I originally created this project as a personal reference to solidify my own understand of shell scripting and DevOps basics. I have decided to share it publicly in the hopes that it might help others on a similar learning journey.
+
 ## What's Inside?
 
 I have broken down the learning into small sections (directories):
