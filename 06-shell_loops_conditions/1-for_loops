@@ -1,0 +1,29 @@
+#!/bin/bash
+# distinct_loops.sh
+
+# Simple for loop iterating over a list
+echo "Counting to 5:"
+for i in 1 2 3 4 5
+do
+  echo "Number: $i"
+done
+
+echo "----------------"
+
+# C-style for loop
+echo "C-style loop:"
+for (( c=1; c<=3; c++ ))
+do
+  echo "Counter: $c"
+done
+
+echo "----------------"
+
+# Looping through files in current directory (safely)
+echo "Files in this directory:"
+for file in *
+do
+  if [ -f "$file" ]; then
+    echo "File found: $file"
+  fi
+done

@@ -1,0 +1,11 @@
+#!/bin/bash
+# while_loop.sh
+
+count=1
+
+echo "While loop running as long as count <= 3:"
+while [ $count -le 3 ]
+do
+  echo "Count is $count"
+  ((count++))
+done

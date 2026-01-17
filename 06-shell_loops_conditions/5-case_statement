@@ -1,0 +1,27 @@
+#!/bin/bash
+# case_statement.sh
+
+echo "What is your favorite Linux distro?"
+echo "1) Ubuntu"
+echo "2) CentOS"
+echo "3) Arch"
+echo "4) Other"
+read -p "Select a number: " choice
+
+case $choice in
+  1)
+    echo "Great choice! Debian-based is solid."
+    ;;
+  2)
+    echo "Classic enterprise choice."
+    ;;
+  3)
+    echo "I use Arch btw."
+    ;;
+  4)
+    echo "Diversity is key!"
+    ;;
+  *)
+    echo "Invalid selection."
+    ;;
+esac

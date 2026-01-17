@@ -1,0 +1,29 @@
+#!/bin/bash
+# return_values.sh
+
+# Function returning an exit code (0-255)
+check_file() {
+  if [ -f "$1" ]; then
+    return 0 # Success
+  else
+    return 1 # Failure
+  fi
+}
+
+# Function "returning" a string via echo
+get_time() {
+  local current_time=$(date +%H:%M:%S)
+  echo "$current_time"
+}
+
+# Usage 1: Exit codes
+file_to_check="README.md"
+if check_file "$file_to_check"; then
+  echo "$file_to_check exists."
+else
+  echo "$file_to_check does not exist."
+fi
+
+# Usage 2: Capturing output
+now=$(get_time)
+echo "The current time is: $now"

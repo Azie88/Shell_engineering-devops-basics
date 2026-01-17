@@ -1,0 +1,11 @@
+#!/bin/bash
+# until_loop.sh
+
+count=1
+
+echo "Until loop running until count > 3:"
+until [ $count -gt 3 ]
+do
+  echo "Count is $count"
+  ((count++))
+done

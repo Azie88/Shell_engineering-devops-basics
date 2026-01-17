@@ -1,0 +1,17 @@
+#!/bin/bash
+# multiplication.sh
+
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+
+# Verify input is numeric (basic check)
+if [[ "$num1" =~ ^[0-9]+$ ]] && [[ "$num2" =~ ^[0-9]+$ ]]; then
+  product=$(( num1 * num2 ))
+  echo "$num1 * $num2 = $product"
+  
+  # Power
+  power=$(( num1 ** num2 ))
+  echo "$num1 to the power of $num2 is $power"
+else
+  echo "Error: Please enter valid integers."
+fi

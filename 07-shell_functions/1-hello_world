@@ -1,0 +1,11 @@
+#!/bin/bash
+# hello_function.sh
+
+# Define a function
+say_hello() {
+  echo "Hello, World from inside a function!"
+}
+
+# Call the function
+say_hello
+say_hello

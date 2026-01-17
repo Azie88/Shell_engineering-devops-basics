@@ -1,0 +1,26 @@
+#!/bin/bash
+# trap_signal.sh
+
+# Define a function to handle the interrupt
+cleanup() {
+  echo ""
+  echo "Caught SIGINT (Ctrl+C). Cleaning up temp files..."
+  # imagine removing temp files here: rm -f /tmp/myscript.*
+  echo "Cleanup complete. Exiting safely."
+  exit 0
+}
+
+# Trap SIGINT (Signal 2) and call the cleanup function
+trap cleanup SIGINT
+
+echo "This script will run for 30 seconds."
+echo "Try pressing Ctrl+C to stop it."
+
+count=1
+while [ $count -le 30 ]; do
+  echo "Running... $count"
+  sleep 1
+  ((count++))
+done
+
+echo "Finished normally."

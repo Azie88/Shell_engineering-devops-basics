@@ -1,0 +1,20 @@
+#!/bin/bash
+# addition.sh
+
+# Adding constants
+sum=$(( 12 + 5 ))
+echo "12 + 5 = $sum"
+
+# Adding variables
+a=30
+b=12
+total=$(( a + b ))
+echo "$a + $b = $total"
+
+# Incrementing
+count=1
+echo "Count is $count"
+((count++))
+echo "Count is now $count"
+let count+=5
+echo "Count after adding 5 is $count"

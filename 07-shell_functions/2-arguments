@@ -1,0 +1,14 @@
+#!/bin/bash
+# function_args.sh
+
+greet_user() {
+  # Arguments are accessed via $1, $2, etc.
+  echo "Hello, $1! Nice to meet you."
+  
+  if [ -n "$2" ]; then
+    echo "I see you are from $2."
+  fi
+}
+
+greet_user "Alice"
+greet_user "Bob" "New York"
