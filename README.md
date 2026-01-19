@@ -13,7 +13,7 @@ Mastering the shell is a superpower for developers and DevOps engineers. It allo
 
 ## About This Repository
 
-I originally created this project as a personal reference to solidify my own understand of shell scripting and DevOps basics. I have decided to share it publicly in the hopes that it might help others on a similar learning journey.
+I originally created this project as a personal reference to solidify my own understanding of shell scripting and DevOps basics. I have decided to share it publicly in the hopes that it might help others on a similar learning journey.
 
 ## What's Inside?
 
