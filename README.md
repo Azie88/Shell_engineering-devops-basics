@@ -30,6 +30,33 @@ I have broken down the learning into small sections (directories):
 
 Each directory has its own `README.md` file that explains what you will learn in that section.
 
+## Getting Started
+
+If you want to run these scripts on your local computer, follow these steps:
+
+### 1. Open Your Terminal
+- **Mac / Linux**: Open the app named "Terminal".
+- **Windows**: You can use PowerShell, Command Prompt, or (highly recommended) [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/install) to get a real Linux environment.
+
+### 2. Navigate to the Directory
+Use the `cd` command to go into the folder where you downloaded this code. For example:
+```bash
+cd Shell_engineering-devops-basics
+```
+
+### 3. Make Scripts Executable
+Before you can run a script, you might need to give it permission to run. Go into a chapter folder (like `01-shell_basics`) and run:
+```bash
+chmod +x filename
+```
+*(Replace `filename` with the actual name of the file you want to run)*
+
+### 4. Run a Script
+To run the script, type `./` followed by the filename:
+```bash
+./filename
+```
+
 ## Contributions :handshake:
 
 Open an issue, submit a pull request or contact me for any contributions.
